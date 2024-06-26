@@ -1,14 +1,14 @@
 import React from 'react';
+import Curriculo from '../Curriculo/Pedro Henrique Sanagiotto.pdf';
 import Avatar from '../img/eu.png';
-import Curriculo from '../Curriculo/Pedro Henrique Sanagiotto.pdf'
 import '../styles/components/sidebar.sass';
+import InformationContainer from "./InformationContainer";
 import SocialNetworkContainer from "./SocialNetworkContainer";
-import InformationContainer from "./InformationContainer"
 
 const Sidebar = () => {
   return <aside id="sidebar">
     <img src={Avatar} alt="Pedro Sanagiotto" />
-    <p className='title'>Desenvolvedor FrontEnd</p>
+    <p className='title'>Desenvolvedor</p>
     <SocialNetworkContainer />
     <InformationContainer />
     <a href={Curriculo} download="Curriculo.pdf" className='btn'> Download currículo</a>

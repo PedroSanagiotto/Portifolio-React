@@ -1,10 +1,10 @@
 import {
-  DiHtml5,
   DiCss3,
+  DiDatabase,
+  DiHtml5,
+  DiJava,
   DiJsBadge,
-  DiNodejsSmall,
-  DiReact,
-  DiSass,
+  DiReact
 } from "react-icons/di";
 
 import "../styles/components/technologiescontainer.sass";
@@ -13,9 +13,9 @@ const technologies = [
   { id: "html", name: "HTML5", icon: <DiHtml5 /> },
   { id: "css", name: "CSS3", icon: <DiCss3 /> },
   { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
+  { id: "java", name: "Java", icon: <DiJava /> },
   { id: "react", name: "React", icon: <DiReact /> },
-  { id: "sass", name: "Sass", icon: <DiSass />},
+  { id: "oracle", name: "Oracle Sql", icon: <DiDatabase />},
 ];
 
 const TechnologiesContainer = () => {

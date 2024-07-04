@@ -1,6 +1,6 @@
-import {AiFillPhone, AiOutlineMail, AiFillEnvironment} from "react-icons/ai"
+import { AiFillEnvironment, AiFillPhone, AiOutlineMail } from "react-icons/ai";
 
-import '../styles/components/informationcontainer.sass'
+import '../styles/components/informationcontainer.sass';
 
 const InformationContainer = () => {
   return (
@@ -8,22 +8,22 @@ const InformationContainer = () => {
       <div className="info-card">
         <AiFillPhone id="phone-icon" />
         <div>
-          <h3>Telefone</h3>
+          <h3>Phone</h3>
           <p>(55)99715-0809</p>
         </div>
       </div>
       <div className="info-card">
         <AiOutlineMail id="email-icon" />
         <div>
-          <h3>E-mail</h3>
+          <h3>Mail</h3>
           <p>phsanagiotto@gmail.com</p>
         </div>
       </div>
       <div className="info-card">
         <AiFillEnvironment id="pin-icon" />
         <div>
-          <h3>Localização</h3>
-          <p>Santa Rosa / RS</p>
+          <h3>Location</h3>
+          <p>Santa Rosa / RS - Brazil</p>
         </div>
       </div>
     </section>

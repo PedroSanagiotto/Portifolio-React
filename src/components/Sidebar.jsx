@@ -8,7 +8,7 @@ import SocialNetworkContainer from "./SocialNetworkContainer";
 const Sidebar = () => {
   return <aside id="sidebar">
     <img src={Avatar} alt="Pedro Sanagiotto" />
-    <p className='title'>Desenvolvedor</p>
+    <p className='title'>Developer</p>
     <SocialNetworkContainer />
     <InformationContainer />
     <a href={Curriculo} download="Curriculo.pdf" className='btn'> Download currículo</a>

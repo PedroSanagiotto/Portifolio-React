@@ -2,8 +2,8 @@
 
 const AboutContainer = () => {
   return <section className="about-container">
-    <h2>Sobre</h2>
-    <p>Desenvolvedor apaixonado por criar experiências digitais envolventes e atualizado com as mais recentes tecnologias. Com uma base sólida em HTML, CSS e JavaScript, e experiência prática em frameworks como React, Next.js com Tailwind CSS e React Native, estou sempre em busca de novos conhecimentos e formas de aprimorar a usabilidade e eficiência dos projetos. Sou colaborativo, criativo e capaz de trabalhar de forma eficaz em equipe, visando sempre atingir os objetivos do projeto com excelência.
+    <h2>About</h2>
+    <p>Passionate developer dedicated to creating engaging digital experiences and staying current with the latest technologies. With a strong foundation in HTML, CSS, and JavaScript, and practical experience with frameworks like React, Next.js with Tailwind CSS, and React Native, I am always pursuing new knowledge and ways to enhance project usability and efficiency. I am collaborative, creative, and capable of effectively working in teams, always aiming to achieve project goals with excellence.
 </p>
   </section>
 }

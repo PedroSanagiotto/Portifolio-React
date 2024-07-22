@@ -1,4 +1,5 @@
 import {
+  DiCodeBadge,
   DiCss3,
   DiDatabase,
   DiHtml5,
@@ -18,6 +19,10 @@ const technologies = [
   { id: "oracle", name: "Oracle Sql", icon: <DiDatabase />},
 ];
 
+const progresso = [
+  {id: "c", name: "C", icon: <DiCodeBadge />}
+]
+
 const TechnologiesContainer = () => {
   return (
     <section className="technologies-container">
@@ -32,6 +37,22 @@ const TechnologiesContainer = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <h2>Em progresso</h2>
+        <div className="technologies-grid">
+        {progresso.map((tech) => (
+          <div className="technology-card" id={tech.id} key={tech.id}>
+            {tech.icon}
+            <div className="technology-info">
+              <h3>{tech.name}</h3>
+              <p></p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+        
       </div>
     </section>
   );

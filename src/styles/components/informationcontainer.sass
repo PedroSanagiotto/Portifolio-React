@@ -1,6 +1,6 @@
 @use '../variables'
-@use '../mixins' 
-    
+@use '../mixins'
+
 #information
     @include mixins.center
     flex-direction: column
@@ -44,3 +44,36 @@
 
         #email-icon
             color: #c17ceb
+
+    // Responsividade
+    @media (max-width: 768px)
+        padding: 0.8rem
+        width: 90%
+
+        .info-card
+            gap: 0.8rem
+            padding-bottom: 0.6rem
+            margin-bottom: 0.6rem
+
+            h3
+                font-size: 0.7rem
+
+            svg
+                width: 1.8rem
+                height: 1.8rem
+
+    @media (max-width: 480px)
+        padding: 0.5rem
+        width: 90%
+
+        .info-card
+            gap: 0.6rem
+            padding-bottom: 0.4rem
+            margin-bottom: 0.4rem
+
+            h3
+                font-size: 0.6rem
+
+            svg
+                width: 1.5rem
+                height: 1.5rem

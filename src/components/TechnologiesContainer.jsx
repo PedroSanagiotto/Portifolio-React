@@ -1,5 +1,4 @@
 import {
-  DiCodeBadge,
   DiCss3,
   DiDatabase,
   DiHtml5,
@@ -19,9 +18,6 @@ const technologies = [
   { id: "oracle", name: "Oracle Sql", icon: <DiDatabase />},
 ];
 
-const progresso = [
-  {id: "c", name: "C", icon: <DiCodeBadge />}
-]
 
 const TechnologiesContainer = () => {
   return (
@@ -38,7 +34,7 @@ const TechnologiesContainer = () => {
           </div>
         ))}
       </div>
-      <div>
+      {/* <div>
         <h2>Em progresso</h2>
         <div className="technologies-grid">
         {progresso.map((tech) => (
@@ -50,10 +46,10 @@ const TechnologiesContainer = () => {
             </div>
           </div>
         ))}
-      </div>
+        </div>
 
         
-      </div>
+        </div> */}
     </section>
   );
 };

@@ -1,6 +1,6 @@
 @use '../variables'
 @use '../mixins' 
-    
+
 #social-networks
     @include mixins.center
     gap: 1rem
@@ -24,3 +24,18 @@
         background: variables.$gradient
         > svg
             color: variables.$text-color
+
+    // Responsividade
+    @media (max-width: 768px)
+        gap: 0.8rem
+
+        .social-btn
+            padding: .5em
+            font-size: 1.1rem
+
+    @media (max-width: 480px)
+        gap: 0.6rem
+
+        .social-btn
+            padding: .4em
+            font-size: 0.9rem

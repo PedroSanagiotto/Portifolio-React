@@ -1,10 +1,9 @@
 @use '../variables'
 @use '../mixins'
 
-
 #sidebar
     background-color: variables.$bg-color
-    flex:  1 1 0
+    flex: 1 1 0
     border-radius: variables.$container-border-radius
     display: flex
     align-items: center
@@ -16,7 +15,7 @@
     img
         max-width: 58%
         border-radius: variables.$container-border-radius
-        position:  absolute
+        position: absolute
         top: -3rem
 
     .title
@@ -28,6 +27,25 @@
 
     .btn
         @include mixins.btn
+        margin: 0.4rem
 
+    // Responsividade
+    @media (max-width: 768px)
+        padding: 2rem 0
 
+        img
+            max-width: 35%
 
+        .title
+            margin-top: 10rem
+            padding: .6rem 1rem
+
+    @media (max-width: 480px)
+        padding: 0.5rem 0
+
+        img
+            max-width: 40%
+
+        .title
+            margin-top: 8rem
+            padding: .4rem .8rem

@@ -1,6 +1,6 @@
 @use '../variables'
 @use '../mixins'
-    
+
 .technologies-container
     margin-bottom: 1rem
 
@@ -15,7 +15,7 @@
         padding: 1rem
         border: 1px solid #333
         width: 45%
-        border-radius: variables.$card-border-radius 
+        border-radius: variables.$card-border-radius
 
         h3
             color: variables.$text-color
@@ -43,11 +43,26 @@
     #react
         svg
             color: #61DAFB
-    
+
     #oracle
         svg
             color: grey
 
-    #c
+
+
+    // Responsividade
+    @media (max-width: 768px)
+        .technology-card
+            width: 48%
+            padding: 0.8rem
+
         svg
-            color: white
+            font-size: 5rem
+
+    @media (max-width: 480px)
+        .technology-card
+            width: 100%
+            padding: 0.6rem
+
+        svg
+            font-size: 4rem

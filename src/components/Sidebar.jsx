@@ -1,4 +1,5 @@
 import React from 'react';
+import Certificados from '../Certificados/Certificados.pdf';
 import Curriculo from '../Curriculo/Pedro Henrique Sanagiotto.pdf';
 import Avatar from '../img/eu.png';
 import '../styles/components/sidebar.sass';
@@ -12,6 +13,7 @@ const Sidebar = () => {
     <SocialNetworkContainer />
     <InformationContainer />
     <a href={Curriculo} download="Curriculo.pdf" className='btn'> Download currículo</a>
+    <a href={Certificados} download="Certificados.pdf" className='btn'> Download certificados</a>
 
   </aside>
 };
